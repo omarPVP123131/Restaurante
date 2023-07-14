@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservas - Restaurante Futurista</title>
+  <link rel="stylesheet" type="text/css" href="Reservas.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+      <div class="menu-bar"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/Menu/menu.html">Menú</a></li>
+      <li><a href="/Contacto/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="restaurant-info">
+    <div class="info-container">
+      <h1 class="restaurant-name">Restaurante Futurista</h1>
+      <p class="restaurant-description">Bienvenido a nuestro restaurante futurista, donde la innovación culinaria se encuentra con una experiencia única. Descubre nuestros platos creativos y sumérgete en un ambiente vanguardista que deleitará tus sentidos.</p>
+    </div>
+  </section>
+
+  <section class="reservation-section">
+    <div class="reservation-container">
+      <h2 class="section-heading">Reserva tu mesa</h2>
+      <form class="reservation-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Hora:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Número de personas:</label>
+          <input type="number" id="guests" name="guests" required>
+        </div>
+        <button type="submit" class="btn-submit">Reservar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="policies">
+      <a href="/Politica_de_servicio/politica.html">Políticas de Servicio</a>
+    </div>
+  </footer>
+  <script src="Reservas.js"></script>
+</body>
+</html>
